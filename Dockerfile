@@ -15,7 +15,7 @@ COPY dagster.yaml /opt/dagster/dagster_home/
 
 WORKDIR /opt/dagster/app
 
-EXPOSE 3001
+EXPOSE 3000
 
 # Use a script to start both dagster-webserver and dagster-daemon
 COPY start.sh /opt/dagster/app/
