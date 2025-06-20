@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Welcome to the Dagster Docker Tutorial! This repository provides a hands-on introduction to setting up a basic data pipeline using Dagster within Docker containers. Dagster is a powerful data orchestrator tool designed for building, running, and observing data pipelines. Docker enhances this by offering an isolated and consistent environment, making your pipelines portable and scalable. This tutorial will guide you through the process of setting up a simple data pipeline using Dagster within a Docker container and print "Hello, World!" to the console."
+Welcome to the Dagster Docker Tutorial! This repository provides a hands-on introduction to setting up a basic data pipeline using Dagster within Docker containers. Dagster is a powerful data orchestrator tool designed for building, running, and observing data pipelines. Docker enhances this by offering an isolated and consistent environment, making your pipelines portable and scalable. This tutorial will guide you through the process of setting up a simple data pipeline using Dagster within a Docker container and print "Hello, Dagster!" to the console.
 
 ## Prerequisites
 
 Before diving into this tutorial, ensure you have the following installed on your machine:
 
 - Docker and Docker Compose
-- Python 3.11 or higher
+- Python 3.12 or higher
 
 A basic understanding of Python programming, Docker containerization, and data pipeline concepts will be helpful.
 
