@@ -56,7 +56,7 @@ Pull the latest image:
 docker pull ghcr.io/flodurorg/dagster-docker-tutorial:latest
 ```
 
-Run it (requires a Postgres instance if you use the compose file):
+Run it:
 
 ```bash
 docker run -p 3000:3000 ghcr.io/flodurorg/dagster-docker-tutorial:latest
@@ -68,3 +68,12 @@ Or with docker compose (will rebuild locally if you keep build context):
 docker compose up -d --pull always
 ```
 
+### Run the dummy job from CLI
+
+Inside the container (or with Docker exec):
+
+```bash
+docker compose exec app dagster job execute -f repo.py -j simple_job
+```
+
+You should see a log line: `Dummy job says hello!`
