@@ -17,7 +17,4 @@ WORKDIR /opt/dagster/app
 
 EXPOSE 3000
 
-# Use a script to start both dagster-webserver and dagster-daemon
-COPY start.sh /opt/dagster/app/
-RUN chmod +x /opt/dagster/app/start.sh
-ENTRYPOINT ["/opt/dagster/app/start.sh"]
+ENTRYPOINT [""]
