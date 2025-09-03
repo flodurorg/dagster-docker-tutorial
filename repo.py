@@ -17,7 +17,7 @@ def log_message():
     logger = get_dagster_logger()
     total_minutes = 10
     for minute in range(1, total_minutes + 1):
-        logger.info(f"simple_job progress: minute {minute}/{total_minutes}")
+        logger.info(f"simple_job progress23: minute {minute}/{total_minutes}")
         time.sleep(60)  # Sleep 60 seconds
     logger.info("simple_job completed ~10 minute run")
     return "done"
