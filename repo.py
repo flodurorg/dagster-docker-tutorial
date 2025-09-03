@@ -11,9 +11,15 @@ all_assets_job = define_asset_job("all_assets_job", selection="*")
 
 @op
 def log_message():
-    # Dummy op that logs a line
+    # Op that runs for ~10 minutes, logging progress each minute
+    import time
     from dagster import get_dagster_logger
-    get_dagster_logger().info("Dummy job says hello!")
+    logger = get_dagster_logger()
+    total_minutes = 10
+    for minute in range(1, total_minutes + 1):
+        logger.info(f"simple_job progress: minute {minute}/{total_minutes}")
+        time.sleep(60)  # Sleep 60 seconds
+    logger.info("simple_job completed ~10 minute run")
     return "done"
 
 
